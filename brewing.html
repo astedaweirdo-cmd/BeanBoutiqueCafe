@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brewing Equipment - Bean Boutique Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <script src="https://widgets.widg.io/widgio-elements.js" defer></script>
+</head>
+<body>
+
+
+<section id="Brewing">
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/coffee_cup-removebg-preview.png" alt="Bean Boutique Cafe Logo">
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#About">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="brewing.html">Brewing Machines</a></li>
+            <li><a href="events.html">Events & Workshops</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+        </ul>
+
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <a href="cart.html" class="cart-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+
+        <div class="search-form">
+            <input
+                type="search"
+                id="search-box"
+                placeholder="Search brewing equipment...">
+            <label for="search-box"></label>
+        </div>
+    </nav>
+
+      
+      <div class="brewing" id="Brewing">
+    <h1>Brewing <span>Machines</span></h1>
+
+    <div class="brewing_box">
+        <div class="brewing_card">
+            <div class="brewing_image">
+                <img src="images/espresso machine.jpg" alt="Espresso Machine">
+            </div>
+
+            <div class="brewing_info">
+                <h2>Espresso Machine</h2>
+                <h3>$299</h3>
+
+                <div class="brewing_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+
+         <a href="#" class="brewing_btn" onclick="addToCart('Espresso Machine', 299, 'images/espresso machine.jpg'); return false;">
+    Add to cart</a>
+                </div>
+            </div>
+
+
+        <div class="brewing_card">
+            <div class="brewing_image">
+                <img src="images/coffee grinder.jpg" alt="Coffee Grinder">
+            </div>
+
+            <div class="brewing_info">
+                <h2>Coffee Grinder</h2>
+                <h3>$89</h3>
+
+                <div class="brewing_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <a href="#" class="brewing_btn" onclick="addToCart('Coffee Grinder', 89, 'images/coffee grinder.jpg'); return false;">
+    Add to cart
+                    </a>
+                </div>
+            </div>
+
+
+        <div class="brewing_card">
+            <div class="brewing_image">
+                <img src="images/french press.jpg" alt="French Press">
+            </div>
+
+            <div class="brewing_info">
+                <h2>French Press</h2>
+                <h3>$35</h3>
+
+                <div class="brewing_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+
+             <a href="#" class="brewing_btn" onclick="addToCart('French Press', 35, 'images/french press.jpg'); return false;">
+    Add to cart
+                    </a>
+                </div>
+            </div>
+
+
+        <div class="brewing_card">
+            <div class="brewing_image">
+                <img src="images/pour over.jpg" alt="Pour Over Dripper">
+            </div>
+
+            <div class="brewing_info">
+                <h2>Pour-Over Dripper</h2>
+                <h3>$28</h3>
+
+                <div class="brewing_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <a href="#" class="brewing_btn" onclick="addToCart('Pour-Over Dripper', 28, 'images/pour over.jpg'); return false;">
+    Add to cart
+                    </a>
+                </div>
+            </div>
+
+
+        <div class="brewing_card">
+            <div class="brewing_image">
+                <img src="images/aeropress.jpg" alt="AeroPress">
+            </div>
+
+            <div class="brewing_info">
+                <h2>AeroPress</h2>
+                <h3>$40</h3>
+
+                <div class="brewing_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+                <a href="#" class="brewing_btn" onclick="addToCart('AeroPress', 40, 'images/aeropress.jpg'); return false;">
+    Add to cart
+                    </a>
+                </div>
+            </div>
+
+
+        <div class="brewing_card">
+            <div class="brewing_image">
+                <img src="images/moka pot.jpg" alt="Moka Pot">
+            </div>
+
+            <div class="brewing_info">
+                <h2>Moka Pot</h2>
+                <h3>$45</h3>
+
+                <div class="brewing_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <a href="#" class="brewing_btn" onclick="addToCart('Moka Pot', 45, 'images/moka pot.jpg'); 
+                return false;">
+                Add to cart
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="cart.js"></script>
+<script>
+
+    const searchIcon = document.getElementById("search-icon");
+    const searchForm = document.querySelector(".search-form");
+    const searchBox = document.getElementById("search-box");
+
+    searchIcon.addEventListener("click", function () 
+    {
+        searchForm.classList.toggle("active");
+        searchBox.focus();
+
+    });
+
+
+    searchBox.addEventListener("keydown", function (event) 
+    {
+        if (event.key === "Enter") 
+        
+        {
+            const searchTerm = searchBox.value.toLowerCase().trim();
+            const brewingCards =
+                document.querySelectorAll(".brewing_card");
+            let found = false;
+
+
+            brewingCards.forEach(function (card) 
+            {
+                const productName =
+                    card.querySelector("h2").textContent.toLowerCase();
+                if (productName.includes(searchTerm)) 
+                {
+                    card.style.display = "";
+                    found = true;
+                } else 
+                {
+                    card.style.display = "none";
+                }
+            });
+
+
+            if (!found) 
+            {
+                alert("Brewing equipment not found.");
+                brewingCards.forEach(function (card) 
+                {
+                    card.style.display = "";
+                });
+            }
+        }
+    });
+
+
+    searchBox.addEventListener("input", function () 
+    {
+        if (searchBox.value.trim() === "") 
+        {
+            const brewingCards =
+                document.querySelectorAll(".brewing_card");
+            brewingCards.forEach(function (card) 
+            {
+                card.style.display = "";
+            });
+        }
+    });
+
+</script>
+</body>
+</html>
+

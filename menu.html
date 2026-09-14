@@ -1,0 +1,403 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Selection - Bean Boutique Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <script src="https://widgets.widg.io/widgio-elements.js" defer></script>
+</head>
+<body>
+
+
+    <section id="Menu">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/coffee_cup-removebg-preview.png" alt="Bean Boutique Cafe Logo">
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#About">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="brewing.html">Brewing Machines</a></li>
+                <li><a href="events.html">Events & Workshops</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+            </ul>
+
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"
+                   id="search-icon">
+                </i>
+
+                <a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+
+
+          
+            <div class="search-form">
+                <input type="search"
+                       id="search-box"
+                       placeholder="Search our coffee products...">
+
+                <label for="search-box"></label>
+            </div>
+        </nav>
+
+
+
+   
+
+         <div class="menu" id="Menu">
+
+        <h1>Our <span>Menu</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="images/cappuccino.jpg" alt="cappuccino">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Cappuccino</h2>           
+                    <h3>$6</h3>
+                    <div class="menu_icon">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star-half"></i>
+                    </div>
+                <a href="#"class="menu_btn"onclick="addToCart('Cappuccino', 6, 'images/cappuccino.jpg'); 
+                return false;">
+                Add to cart
+                    </a>
+                </div>
+            </div>
+        
+
+        <div class="menu_card">
+            <div class="menu_image">
+                <img src="images/americano.jpg" alt="Americano">
+            </div>
+
+            <div class="menu_info">
+                <h2>Americano</h2>
+                <h3>$5</h3>
+
+                <div class="menu_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+
+                <a href="#"class="menu_btn"onclick="addToCart('Americano', 6, 'images/americano.jpg'); 
+                return false;">
+                Add to cart
+                    </a>
+                </div>
+            </div>
+
+
+        <div class="menu_card">
+            <div class="menu_image">
+                <img src="images/matcha latte.jpg" alt="Matcha Latte">
+            </div>
+
+            <div class="menu_info">
+                <h2>Matcha Latte</h2>
+                <h3>$6</h3>
+
+                <div class="menu_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <a href="#"class="menu_btn"onclick="addToCart('Matcha Latte', 6, 'images/matcha latte.jpg'); 
+                return false;">
+                Add to cart
+                </a>
+            </div>
+        </div>
+
+
+        <div class="menu_card">
+            <div class="menu_image">
+                <img src="images/latte.jpg" alt="Latte">
+            </div>
+
+            <div class="menu_info">
+                <h2>Latte</h2>
+                <h3>$6</h3>
+
+                <div class="menu_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+
+                <a href="#" class="menu_btn" onclick="addToCart('Latte', 6, 'images/latte.jpg'); 
+                return false;">
+                Add to cart
+                </a>
+            </div>
+        </div>
+
+
+        <div class="menu_card">
+            <div class="menu_image">
+                <img src="images/macchiato.jpg" alt="Macchiato">
+            </div>
+
+            <div class="menu_info">
+                <h2>Macchiato</h2>
+                <h3>$6</h3>
+
+                <div class="menu_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+
+                <a href="#" class="menu_btn" onclick="addToCart('Macchiato', 6, 'images/macchiato.jpg'); 
+                return false;">
+                Add to cart
+                </a>
+            </div>
+        </div>
+
+
+        <div class="menu_card">
+            <div class="menu_image">
+                <img src="images/mint chocolate.jpg" alt="Mint Chocolate">
+            </div>
+
+            <div class="menu_info">
+                <h2>Mint Chocolate</h2>
+                <h3>$6</h3>
+
+                <div class="menu_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <a href="#" class="menu_btn" onclick="addToCart('Mint Chocolate', 6, 'images/mint chocolate.jpg'); 
+                return false;">
+                Add to cart
+                </a>
+            </div>
+        </div>
+
+
+        <div class="menu_card">
+            <div class="menu_image">
+                <img src="images/mocha.jpg" alt="Mocha">
+            </div>
+
+            <div class="menu_info">
+                <h2>Mocha</h2>
+                <h3>$6</h3>
+
+                <div class="menu_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+
+                <a href="#" class="menu_btn" onclick="addToCart('Mocha', 6, 'images/mocha.jpg'); 
+                return false;">
+                Add to cart
+                </a>
+            </div>
+        </div>
+
+
+        <div class="menu_card">
+            <div class="menu_image">
+                <img src="images/white mocha.jpg" alt="White Mocha">
+            </div>
+
+            <div class="menu_info">
+                <h2>White Mocha</h2>
+                <h3>$6</h3>
+
+                <div class="menu_icon">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+
+                <a href="#" class="menu_btn" onclick="addToCart('White Mocha', 6, 'images/white mocha.jpg'); 
+                return false;">
+                Add to cart
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+
+    <div class="elfsight-app-5483ba05-ea63-423e-82ad-06c69608952e"
+         data-elfsight-app-lazy>
+    </div>
+
+
+    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js"
+            defer>
+    </script>
+
+    <div class="commonninja_component pid-75f0b04b-df1c-428a-8b1b-1ef9e7a8c6b2">
+    </div>
+
+
+
+
+    <script>
+
+        const searchIcon =
+            document.getElementById("search-icon");
+        const searchForm =
+            document.querySelector(".search-form");
+        const searchBox =
+            document.getElementById("search-box");
+
+
+        searchIcon.addEventListener("click", function () 
+        {
+            searchForm.classList.toggle("active");
+            searchBox.focus();
+        });
+
+
+
+
+        const animatedText =
+            document.getElementById("animated-search-text");
+
+        const messages = [
+            "Find your perfect coffee...",
+            "Try searching Cappuccino...",
+            "Looking for a Latte?",
+            "Maybe a delicious Mocha?",
+            "Explore our coffee selection..."
+        ];
+
+        let messageIndex = 0;
+
+
+        function changeSearchMessage() 
+        {
+            animatedText.style.opacity = "0";
+
+            setTimeout(function () 
+            {
+                messageIndex =
+                    (messageIndex + 1) % messages.length;
+                animatedText.textContent =
+                    messages[messageIndex];
+                animatedText.style.opacity = "1";
+            }, 500);
+
+        }
+
+
+        setInterval(changeSearchMessage, 2500);
+
+ 
+
+        searchBox.addEventListener("keydown", function (event) 
+        {
+            if (event.key === "Enter") 
+            {
+                const searchTerm =
+                    searchBox.value.toLowerCase().trim();
+                const menuCards =
+                    document.querySelectorAll(".menu_card");
+                let found = false;
+
+
+                menuCards.forEach(function (card) 
+                {
+                    const productName =
+                        card.querySelector("h2")
+                            .textContent
+                            .toLowerCase();
+
+                    if (productName.includes(searchTerm)) 
+                    {
+                        card.style.display = "";
+                        found = true;
+
+                    } else 
+
+                    {
+                        card.style.display = "none";
+                    }
+                });
+
+
+                if (found) 
+                {
+                    document.getElementById("Menu")
+                        .scrollIntoView({
+                            behavior: "smooth"
+                        });
+
+                } else 
+                {
+                    alert("Coffee product not found.");
+                    menuCards.forEach(function (card) 
+                    
+                    {
+                        card.style.display = "";
+                    });
+                }
+            }
+        });
+
+
+
+        searchBox.addEventListener("input", function () 
+        {
+            if (searchBox.value.trim() === "") 
+            {
+                const menuCards =
+                    document.querySelectorAll(".menu_card");
+                menuCards.forEach(function (card) 
+                {
+                    card.style.display = "";
+                });
+            }
+        });
+
+    </script>
+    <script src="cart.js"></script>
+</body>
+</html>

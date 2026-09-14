@@ -1,0 +1,1336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+section nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(255, 242, 227, 0.986);
+    box-shadow: 0 2px 10px rgba(124, 79, 43, 0.3);
+}
+
+section nav .logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: rgb(189, 127, 154);
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+section nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: rgb(103, 58, 28);
+    transition: 0.3s linear;
+    width: 0%;
+}
+
+section nav ul li a:hover::after {
+    width: 100%;
+}
+
+section nav ul li a:hover {
+    color: rgb(103, 58, 28);
+}
+
+section nav .icon i {
+    color: rgb(189, 127, 154);
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover {
+    color: rgb(103, 58, 28);
+}
+
+.search-form {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(103, 58, 28, 0.2);
+
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.search-form.active {
+    transform: scaleY(1);
+}
+
+.search-form input {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(103, 58, 28);
+}
+
+.search-form input::placeholder {
+    color: #765f50;
+}
+
+
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    background: #fffaf5;
+}
+
+section .main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+    height: 100%;
+    padding: 90px 5% 0;
+    overflow: hidden;
+}
+
+
+section .main .men_text {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+section .main .welcome {
+    color: rgb(189, 127, 154);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+section .main .welcome::after {
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    background: rgb(189, 127, 154);
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+
+section .main .men_text h1 {
+    color: rgb(103, 58, 28);
+    font-family: 'MV Boli', cursive;
+    font-size: 78px;
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+
+section .main .men_text h1 span {
+    display: block;
+    color: rgb(189, 127, 154);
+    font-family: 'MV Boli', cursive;
+    font-size: 105px;
+    line-height: 1;
+}
+
+
+section .main .men_text p {
+    width: 520px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    color: #765f50;
+    margin-bottom: 30px;
+}
+
+
+section .main_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgb(103, 58, 28);
+    padding: 14px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main_btn a {
+    color: #fffaf5;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+section .main_btn i {
+    color: rgb(189, 127, 154);
+    transition: 0.3s;
+}
+
+section .main_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(103, 58, 28, 0.2);
+}
+
+section .main_btn:hover i {
+    transform: translateX(6px);
+}
+
+
+section .main .main_image {
+    width: 45%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section .main .image_circle {
+    width: 500px;
+    height: 500px;
+    background: #f3e1d0;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    z-index: 0;
+}
+
+
+section .main .main_image img {
+    width: 510px;
+    height: 510px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    border: 12px solid #fffaf5;
+    box-shadow: 0 15px 40px rgba(103, 58, 28, 0.18);
+}
+
+
+.coffee_tag {
+    position: absolute;
+    right: 0;
+    bottom: 75px;
+    z-index: 3;
+    background: white;
+    padding: 13px 20px;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px rgba(103, 58, 28, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(103, 58, 28);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.coffee_tag i {
+    color: rgb(189, 127, 154);
+    font-size: 18px;
+}
+
+
+
+
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 110px 7%;
+    background: #fffaf5;
+    display: flex;
+    align-items: center;
+}
+
+.about .about_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+.about .about_main .image {
+    width: 48%;
+    position: relative;
+}
+
+.about .about_main .image::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(189, 127, 154);
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.about .about_main .image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 15px 35px rgba(103, 58, 28, 0.15);
+}
+
+
+.about .about_main .about_text {
+    width: 48%;
+}
+
+.about_label {
+    color: rgb(189, 127, 154);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.about_label::before {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 2px;
+    background: rgb(189, 127, 154);
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.about .about_main .about_text h1 {
+    font-size: 58px;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: rgb(103, 58, 28);
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about_main .about_text h1 span {
+    color: rgb(189, 127, 154);
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about_main .about_text h2 {
+    font-size: 25px;
+    color: rgb(103, 58, 28);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.about .about_main .about_text p {
+    width: 100%;
+    color: #765f50;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+
+.about_features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.about-features .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about_features .feature > div {
+    text-align: center;
+}
+
+.about_features .feature i {
+    margin-right: 12px;
+}
+
+.about_btn {
+    display: block !important;
+    width: fit-content !important;
+    margin: 30px auto 0 !important;
+    text-align: center;
+}
+
+.about h1 span {
+    position: relative;
+    display: inline-block;
+}
+
+.about h1 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: rgb(189, 127, 154);
+    z-index: -1;
+}
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature i {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #f3e1d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(103, 58, 28);
+}
+
+.feature h3 {
+    font-size: 14px;
+    color: rgb(103, 58, 28);
+    margin-bottom: 2px;
+}
+
+.feature span {
+    font-size: 11px;
+    color: #987d6c;
+}
+
+
+.about .about_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgb(103, 58, 28);
+    padding: 13px 20px;
+    color: #fffaf5;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.about .about_btn i {
+    color: rgb(189, 127, 154);
+    transition: 0.3s;
+}
+
+.about .about_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(103, 58, 28, 0.2);
+}
+
+.about .about_btn:hover i {
+    transform: translateX(5px);
+}
+
+
+
+
+.menu {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0;
+    background: #fffaf5;
+}
+
+.menu h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: rgb(189, 127, 154);
+}
+
+.menu h1 span {
+    color: rgb(103, 58, 28);
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(189, 127, 154);
+    display: block;
+    position: relative;
+    bottom: 10px;
+}
+
+.menu .menu_box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu .menu_box .menu_card {
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(103, 58, 28, 0.2);
+    position: relative;
+}
+
+.menu .menu_box .menu_card .menu_image {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.menu .menu_box .menu_card .menu_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image img:hover {
+    transform: scale(1.05);
+}
+
+.menu .menu_box .menu_card .small_card {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menu .menu_box .menu_card .small_card i {
+    color: rgb(189, 127, 154);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu .menu_box .menu_card .menu_info {
+    text-align: center;
+    padding: 15px;
+}
+
+.menu .menu_box .menu_card .menu_info h2 {
+    color: rgb(103, 58, 28);
+    margin-bottom: 8px;
+}
+
+.menu .menu_box .menu_card .menu_info h3 {
+    font-size: 20px;
+    color: rgb(103, 58, 28);
+    margin-bottom: 5px;
+}
+
+.menu .menu_box .menu_card .menu_icon {
+    color: rgb(189, 127, 154);
+    margin-bottom: 12px;
+}
+
+.menu .menu_box .menu_card .menu_btn {
+    display: inline-block;
+    background: rgb(103, 58, 28);
+    color: white;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_btn:hover {
+    background: rgb(189, 127, 154);
+}
+
+
+
+
+
+.brewing {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0;
+    background: #fffaf5;
+}
+
+.brewing h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: rgb(189, 127, 154);
+}
+
+.brewing h1 span {
+    color: rgb(103, 58, 28);
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brewing h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(189, 127, 154);
+    display: block;
+    position: relative;
+    bottom: 2px;
+}
+
+.brewing .brewing_box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.brewing .brewing_box .brewing_card {
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(103, 58, 28, 0.2);
+    position: relative;
+}
+
+.brewing .brewing_box .brewing_card .brewing_image {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.brewing .brewing_box .brewing_card .brewing_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.brewing .brewing_box .brewing_card .brewing_image img:hover {
+    transform: scale(1.05);
+}
+
+.brewing .brewing_box .brewing_card .small_card {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.brewing .brewing_box .brewing_card .small_card i {
+    color: rgb(189, 127, 154);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.brewing .brewing_box .brewing_card .brewing_info {
+    text-align: center;
+    padding: 15px;
+}
+
+.brewing .brewing_box .brewing_card .brewing_info h2 {
+    color: rgb(103, 58, 28);
+    margin-bottom: 8px;
+}
+
+.brewing .brewing_box .brewing_card .brewing_info h3 {
+    font-size: 20px;
+    color: rgb(103, 58, 28);
+    margin-bottom: 5px;
+}
+
+.brewing .brewing_box .brewing_card .brewing_icon {
+    color: rgb(189, 127, 154);
+    margin-bottom: 12px;
+}
+
+.brewing .brewing_box .brewing_card .brewing_btn {
+    display: inline-block;
+    background: rgb(103, 58, 28);
+    color: white;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.brewing .brewing_box .brewing_card .brewing_btn:hover {
+    background: rgb(189, 127, 154);
+}
+
+
+
+
+
+
+.events {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 7%;
+    background: #fffaf5;
+}
+
+.events h1 {
+    font-size: 55px;
+    text-align: center;
+    color: rgb(189, 127, 154);
+    margin-bottom: 15px;
+}
+
+.events h1 span {
+    color:rgb(103, 58, 28);
+    position: relative;
+    display: inline-block;
+}
+
+.events h1 .title-highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.events h1 .title-highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background-color:rgb(189, 127, 154);
+}
+
+.events_intro {
+    text-align: center;
+    color: #765f50;
+    font-size: 15px;
+    max-width: 650px;
+    margin: 0 auto 50px;
+    line-height: 25px;
+}
+
+
+
+
+.events_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.event_card {
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(103, 58, 28, 0.15);
+    transition: 0.3s;
+}
+
+.event_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(103, 58, 28, 0.2);
+}
+
+.event_image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.event_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.event_card:hover .event_image img {
+    transform: scale(1.05);
+}
+
+.event_info {
+    padding: 25px;
+}
+
+.event_date {
+    color: rgb(189, 127, 154);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.event_info h2 {
+    color: rgb(103, 58, 28);
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.event_info p {
+    color: #765f50;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.event_details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+    color: #987d6c;
+}
+
+.event_details i {
+    color: rgb(189, 127, 154);
+    margin-right: 5px;
+}
+
+
+
+
+
+
+.registration {
+    width: 90%;
+    max-width: 1000px;
+    margin: 80px auto 0;
+    padding: 45px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(103, 58, 28, 0.15);
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.registration_text {
+    width: 40%;
+}
+
+.registration_text > span {
+    color: rgb(189, 127, 154);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.registration_text h2 {
+    color: rgb(103, 58, 28);
+    font-size: 32px;
+    margin: 12px 0 15px;
+}
+
+.registration_text p {
+    color: #765f50;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+
+.registration_form {
+    width: 55%;
+}
+
+.form_row {
+    display: flex;
+    gap: 20px;
+}
+
+.form_group {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.form_group label {
+    display: block;
+    color: rgb(103, 58, 28);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.form_group input,
+.form_group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #decfc3;
+    border-radius: 5px;
+    background: #fffaf5;
+    color: #765f50;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    outline: none;
+}
+
+.form_group input:focus,
+.form_group select:focus {
+    border-color: rgb(189, 127, 154);
+}
+
+.register_btn {
+    border: none;
+    background: rgb(103, 58, 28);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register_btn i {
+    color: rgb(189, 127, 154);
+    margin-left: 8px;
+}
+
+.register_btn:hover {
+    background: rgb(189, 127, 154);
+}
+
+.register_btn:hover i {
+    color: white;
+}
+
+
+
+
+section nav .icon .cart-link {
+    position: relative;
+    text-decoration: none;
+}
+
+
+section nav .icon .cart-link i {
+    color: rgb(189, 127, 154);
+}
+
+
+#cart-count {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(189, 127, 154);
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+    section nav {
+        height: 105px;
+        padding: 5px 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section nav .logo,
+    section nav .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    section nav .icon {
+        display: flex;
+        gap: 14px;
+    }
+
+    section nav .icon i {
+        font-size: 18px;
+    }
+
+    section nav ul {
+        order: 3;
+        width: 100%;
+        height: 38px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding: 0 5px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    section nav ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    section nav ul li {
+        flex: 0 0 auto;
+        margin: 0;
+    }
+
+    section nav ul li a {
+        font-size: 13px;
+    }
+
+
+
+    section#Home {
+        height: auto;
+        min-height: 100svh;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 180px 18px 45px;
+        gap: 18px;
+    }
+
+    section#Home .main .men_text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+
+    .welcome {
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+
+    .men_text h1 {
+        font-size: 31px;
+        line-height: 1.15;
+        text-align: center;
+        margin: 5px auto;
+        max-width: 340px;
+    }
+
+    .men_text h1 span {
+        font-size: 15px;
+        line-height: 1.05;
+        display: block;
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+}
+
+
+    .men_text p {
+        width: 100%;
+        max-width: 350px;
+        margin: 14px auto;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .main_btn {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    .main_image {
+        width: 100%;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_image .circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .main_image img {
+        width: 225px;
+        height: 225px;
+        object-fit: cover;
+    }
+
+    .coffee_tag {
+        display: none;
+    }
+
+
+
+    
+
+    .about {
+        width: 100%;
+        min-height: auto;
+        padding: 80px 18px 60px;
+        display: block;
+    }
+
+    .about .about_main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+    .about .about_main .image {
+        width: 100%;
+        height: 330px;
+        display: block;
+        margin-bottom: 70px;
+    }
+
+    .about .about_main .image img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        display: block;
+    }
+
+
+    .about .about_main .about_text {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        margin-top: 0;
+    }
+
+    .about .about_main .about_text h1 {
+        font-size: 34px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .about .about_main .about_text h2 {
+        font-size: 19px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .about .about_main .about_text p {
+        width: 100%;
+        max-width: 370px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: center;
+    }
+
+
+
+
+    .brewing h1,
+    .brewing > h1 {
+        font-size: 34px;
+        line-height: 1.1;
+
+        text-align: center;
+
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+@media (max-width: 480px) {
+
+
+    .men_text h1 {
+        font-size: 28px;
+        max-width: 330px;
+    }
+
+    .men_text h1 span {
+        font-size: 39px;
+    }
+
+    .men_text p {
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 340px;
+    }
+
+
+
+
+    .about .image {
+        height: 300px;
+    }
+
+    .about .image img {
+        height: 300px;
+    }
+
+
+    .about_text h1 {
+        font-size: 32px;
+    }
+
+    .about_text h2 {
+        font-size: 18px;
+    }
+
+    .about_text p {
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 350px;
+    }
+
+
+    .about_features {
+        gap: 12px;
+    }
+
+    .about_feature h3 {
+        font-size: 13px;
+    }
+
+    .about_feature p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+    .brewing h1,
+    .brewing > h1 {
+        font-size: 29px;
+        line-height: 1.15;
+        max-width: 340px;
+    }
+
+}
+
+
+.common-ninja-space {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    clear: both;
+}
+
+.widgio-space {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    clear: both;
+}

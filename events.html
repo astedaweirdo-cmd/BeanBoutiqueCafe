@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events & Workshops - Bean Boutique Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    
+    <script src="https://widgets.widg.io/widgio-elements.js" defer></script>
+</head>
+<body>
+
+
+
+    <section id="Events">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/coffee_cup-removebg-preview.png"
+                        alt="Bean Boutique Cafe Logo">
+                </a>
+            </div>
+
+
+            <ul>
+                <li></li><a href="index.html">Home</a></li>
+                <li><a href="index.html#About">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="brewing.html">Brewing Machines</a></li>
+                <li><a href="events.html">Events & Workshops</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+            </ul>
+
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"
+                    id="search-icon"></i>
+
+                  <a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+
+
+            <div class="search-form">
+                <input
+                    type="search"
+                    id="search-box"
+                    placeholder="Search events and workshops...">
+                <label for="search-box"></label>
+            </div>
+        </nav>
+
+
+<div class="events" id="Events">
+    <h1>Events & <span class="title-highlight">Workshops</span></h1>
+    <p class="events_intro">
+        Join our workshops and events for never-ending memories!
+    </p>
+
+
+    <div class="events_box">
+        <div class="event_card">
+            <div class="event_image">
+                <img src="images/coffee brewing.jpg" alt="Coffee Brewing Workshop">
+            </div>
+
+            <div class="event_info">
+
+                <span class="event_date">SEPTEMBER 20, 2026</span>
+
+                <h2>Coffee Brewing Workshop</h2>
+
+                <p>
+                    Learn the basics of coffee brewing and discover how
+                    different brewing methods create different flavors.
+                </p>
+
+                <div class="event_details">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        2:00 PM - 4:00 PM
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bean Boutique
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="event_card">
+            <div class="event_image">
+                <img src="images/live music night.jpg" alt="Live Music Night">
+            </div>
+
+            <div class="event_info">
+
+                <span class="event_date">OCTOBER 5, 2026</span>
+
+                <h2>Live Music Night Event</h2>
+
+                <p>
+                    Enjoy your evening with your favorite coffee and live music!
+                </p>
+
+                <div class="event_details">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        6:00 PM- 10:00 PM
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bean Boutique
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="event_card">
+            <div class="event_image">
+                <img src="images/latte art.jpg" alt="Latte Art Workshop">
+            </div>
+
+            <div class="event_info">
+
+                <span class="event_date">OCTOBER 18, 2026</span>
+
+                <h2>Latte Art Workshop</h2>
+
+                <p>
+                    Discover the techniques behind beautiful latte art
+                    and practice creating your own café-style designs.
+                </p>
+
+                <div class="event_details">
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        2:00 PM - 4:00 PM
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bean Boutique
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="registration">
+        <div class="registration_text">
+
+            <span>JOIN US</span>
+
+            <h2>Register for an Event</h2>
+
+            <p>
+                Interested in joining one of our upcoming events?
+                Fill in your details below and send us your registration.
+            </p>
+        </div>
+
+
+        <form
+            class="registration_form"
+            action="mailto:beanboutiquecafe@gmail.com"
+            method="post"
+            enctype="text/plain">
+
+            <div class="form_row">
+                <div class="form_group">
+
+                    <label for="firstName">First Name</label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="First Name"
+                        placeholder="Enter your first name"
+                        required>
+                </div>
+
+
+                <div class="form_group">
+
+                    <label for="lastName">Last Name</label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="Last Name"
+                        placeholder="Enter your last name"
+                        required>
+                </div>
+            </div>
+
+
+            <div class="form_group">
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="Email Address"
+                    placeholder="Enter your email address"
+                    required>
+            </div>
+
+
+            <div class="form_group">
+
+                <label for="event">Choose an Event</label>
+
+                <select id="event" name="Event" required>
+
+                    <option value="">Select an event</option>
+
+                    <option value="Coffee Brewing Workshop">
+                        Coffee Brewing Workshop
+                    </option>
+
+                    <option value="Coffee Tasting Evening">
+                        Coffee Tasting Evening
+                    </option>
+
+                    <option value="Latte Art Workshop">
+                        Latte Art Workshop
+                    </option>
+                </select>
+            </div>
+
+
+            <button type="submit" class="register_btn">
+                Register Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+
+
+
+ <script>
+
+        const searchIcon =
+            document.getElementById("search-icon");
+        const searchForm =
+            document.querySelector(".search-form");
+        const searchBox =
+            document.getElementById("search-box");
+
+
+    
+        searchIcon.addEventListener("click", function () 
+        {
+            searchForm.classList.toggle("active");
+            searchBox.focus();
+        });
+
+
+
+        
+        searchBox.addEventListener("keydown", function (event) 
+        {
+            if (event.key === "Enter") 
+            {
+                const searchTerm =
+                    searchBox.value.toLowerCase().trim();
+                const eventCards =
+                    document.querySelectorAll(".event_card");
+
+                let found = false;
+
+                eventCards.forEach(function (card) 
+                {
+                    const eventText =
+                        card.textContent.toLowerCase();
+                    if (eventText.includes(searchTerm)) 
+                    {
+                        card.style.display = "";
+                        found = true;
+                    }
+
+                    else 
+                    {
+                        card.style.display = "none";
+                    }
+                });
+
+
+                if (!found) 
+                {
+                    alert("Event or workshop not found.");
+                    eventCards.forEach(function (card) 
+                    {
+                        card.style.display = "";
+                    });
+                }
+            }
+        });
+
+
+
+
+        searchBox.addEventListener("input", function () 
+        {
+            if (searchBox.value.trim() === "") 
+            {
+                const eventCards =
+                    document.querySelectorAll(".event_card");
+                eventCards.forEach(function (card) 
+                {
+                    card.style.display = "";
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

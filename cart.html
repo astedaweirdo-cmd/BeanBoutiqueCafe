@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - Bean Boutique Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="cart-nav">
+        <div class="logo">
+            <img src="images/coffee_cup-removebg-preview.png" alt="Bean Boutique Cafe">
+        </div>
+
+        <a href="index.html" class="back-home">
+            <i class="fa-solid fa-arrow-left"></i>
+            Continue Shopping
+        </a>
+
+        <div class="cart-nav-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+
+    <main class="cart-page">
+
+        <h1>My <span>Cart</span></h1>
+
+        <div id="cart-container">
+        </div>
+
+
+        <div class="cart-summary">
+
+            <h2>Cart Summary</h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery</span>
+                <span>Free</span>
+            </div>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <span id="final-total">$0.00</span>
+            </div>
+
+            <button class="checkout-btn" onclick="checkout()">
+                Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button class="clear-cart-btn" onclick="clearCart()">
+                Empty Cart
+            </button>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>
