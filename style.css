@@ -1444,14 +1444,14 @@ body {
 }
 
 
-.subscription-heading h1 {
+.subscription-heading h2 {
     font-size: 42px;
     color: rgb(76, 40, 17);
     margin: 10px 0;
 }
 
 
-.subscription-heading h1 span {
+.subscription-heading h2 span {
     color: rgb(189, 127, 154);
     font-size: inherit;
     letter-spacing: 0;
