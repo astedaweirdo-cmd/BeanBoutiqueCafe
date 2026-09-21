@@ -398,7 +398,7 @@ section .main .main_image img {
     width: 100%;
 }
 
-.about-features .feature {
+.about_features .feature {
     display: flex;
     align-items: center;
     justify-content: center;
