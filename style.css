@@ -102,6 +102,7 @@ section nav .icon i:hover {
 
     transform: scaleY(0);
     transform-origin: top;
+    transition: transform 0.3s ease;
 }
 
 .search-form.active {
@@ -402,6 +403,16 @@ section .main .main_image img {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 15px 25px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(103, 58, 28, 0.15);
+    transition: 0.3s;
+}
+
+.about_features .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(103, 58, 28, 0.2);
 }
 
 .about_features .feature > div {
