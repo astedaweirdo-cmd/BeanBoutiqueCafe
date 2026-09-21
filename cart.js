@@ -79,7 +79,6 @@ function displayCart()
 
         cartContainer.innerHTML += `
             <div class="cart-item">
-                <img src="${item.image}" alt="${item.name}">
                 <div class="cart-item-info">
 
                     <h2>${item.name}</h2>
