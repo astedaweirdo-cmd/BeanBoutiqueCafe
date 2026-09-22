@@ -170,7 +170,7 @@ section .main .welcome::after {
 }
 
 
-section .main .men_text h1 {
+section .main .men_text h1, h2 {
     color: rgb(103, 58, 28);
     font-family: 'MV Boli', cursive;
     font-size: 78px;
@@ -178,7 +178,7 @@ section .main .men_text h1 {
     margin-bottom: 25px;
 }
 
-section .main .men_text h1 span {
+section .main .men_text h1, h2 span {
     display: block;
     color: rgb(189, 127, 154);
     font-family: 'MV Boli', cursive;
@@ -604,11 +604,12 @@ section .main .main_image img {
 .menu .menu_box .menu_card .menu_info h2 {
     color: rgb(103, 58, 28);
     margin-bottom: 8px;
+    font-size: 30px;
 }
 
 .menu .menu_box .menu_card .menu_info h3 {
     font-size: 20px;
-    color: rgb(103, 58, 28);
+    color:  rgb(189, 127, 154);
     margin-bottom: 5px;
 }
 
@@ -735,11 +736,12 @@ section .main .main_image img {
 .brewing .brewing_box .brewing_card .brewing_info h2 {
     color: rgb(103, 58, 28);
     margin-bottom: 8px;
+    font-size: 30px;
 }
 
 .brewing .brewing_box .brewing_card .brewing_info h3 {
     font-size: 20px;
-    color: rgb(103, 58, 28);
+    color: rgb(189, 127, 154);
     margin-bottom: 5px;
 }
 
@@ -1368,6 +1370,10 @@ body {
 .subscription-heading p{
     color:rgb(189, 127, 154);
 }
+
+
+
+
 
 
 @media (max-width: 1000px) {
