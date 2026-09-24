@@ -172,7 +172,7 @@ section .main .welcome::after {
 
 section .main .men_text h1, h2 {
     color: rgb(103, 58, 28);
-    font-family: 'MV Boli', cursive;
+    font-family: poppins;
     font-size: 78px;
     line-height: 0.95;
     margin-bottom: 25px;
@@ -181,7 +181,7 @@ section .main .men_text h1, h2 {
 section .main .men_text h1, h2 span {
     display: block;
     color: rgb(189, 127, 154);
-    font-family: 'MV Boli', cursive;
+    font-family: poppins;
     font-size: 105px;
     line-height: 1;
 }
