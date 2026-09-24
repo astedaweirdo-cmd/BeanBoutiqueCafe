@@ -1854,10 +1854,11 @@ body {
 }
 
 
+
 .empty-cart {
     text-align: center;
-    padding: 50px;
     color: #765f50;
+    font-size: 20px;
 }
 
 
@@ -1866,6 +1867,10 @@ body {
     color: rgb(189, 127, 154);
     margin-bottom: 20px;
 }
+
+.empty-cart i, h2{
+    font-size: 40px;
+} 
 
 
 @media (max-width: 700px) {
