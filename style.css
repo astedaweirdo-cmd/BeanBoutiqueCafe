@@ -1765,6 +1765,7 @@ body {
 .cart-item-info h2 {
     margin-bottom: 8px;
     color: rgb(103, 58, 28);
+    font-size: 20px;
 }
 
 
@@ -1834,6 +1835,7 @@ body {
 .cart-summary h2 {
     color: rgb(103, 58, 28);
     margin-bottom: 20px;
+    font-size: 22px;
 }
 
 
