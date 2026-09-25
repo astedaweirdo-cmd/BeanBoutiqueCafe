@@ -11,17 +11,8 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    width: 100%;
-    height: 100vh;
-}
-html{
-    scroll-behavior: smooth;
-}
 
-
-
-section nav {
+nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -35,23 +26,26 @@ section nav {
     box-shadow: 0 2px 10px rgba(124, 79, 43, 0.3);
 }
 
-section nav .logo img {
+nav .logo img {
     width: 90px;
     height: 90px;
     object-fit: contain;
     cursor: pointer;
 }
 
-section nav ul {
+.main-nav ul {
     list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
-section nav ul li {
+.main-nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
 
-section nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: rgb(189, 127, 154);
     font-size: 17px;
@@ -59,7 +53,7 @@ section nav ul li a {
     transition: 0.3s;
 }
 
-section nav ul li a::after {
+nav ul li a::after {
     content: '';
     display: block;
     height: 2px;
@@ -68,15 +62,15 @@ section nav ul li a::after {
     width: 0%;
 }
 
-section nav ul li a:hover::after {
+nav ul li a:hover::after {
     width: 100%;
 }
 
-section nav ul li a:hover {
+nav ul li a:hover {
     color: rgb(103, 58, 28);
 }
 
-section nav .icon i {
+nav .icon i {
     color: rgb(189, 127, 154);
     font-size: 20px;
     margin: 0 5px;
@@ -84,9 +78,11 @@ section nav .icon i {
     transition: 0.3s;
 }
 
-section nav .icon i:hover {
+nav .icon i:hover {
     color: rgb(103, 58, 28);
 }
+
+
 
 .search-form {
     position: absolute;
@@ -124,6 +120,76 @@ section nav .icon i:hover {
     color: #765f50;
 }
 
+
+
+.discount-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-content {
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    padding: 40px 30px;
+    background: #fffaf5;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.discount-content h2 {
+    margin-bottom: 15px;
+    color: rgb(76, 40, 17);
+}
+
+.discount-content p {
+    margin-bottom: 20px;
+    color: rgb(76, 40, 17);
+}
+
+#popupEmail {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.discount-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(189, 127, 154);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.discount-button:hover {
+    background: rgb(161, 64, 4);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: rgb(76, 40, 17);
+}
 
 
 
@@ -503,6 +569,10 @@ section .main .main_image img {
 
 
 
+.footer p {
+    color: rgb(189, 127, 154);
+    text-align: center;
+}
 
 .menu {
     width: 100%;
@@ -605,6 +675,12 @@ section .main .main_image img {
     color: rgb(103, 58, 28);
     margin-bottom: 8px;
     font-size: 30px;
+}
+
+.menu .menu_box .menu_card .menu_info p {
+    color: rgb(103, 58, 28);
+    margin-bottom: 8px;
+    font-size: 15px;
 }
 
 .menu .menu_box .menu_card .menu_info h3 {
@@ -737,6 +813,11 @@ section .main .main_image img {
     color: rgb(103, 58, 28);
     margin-bottom: 8px;
     font-size: 30px;
+}
+
+.brewing .brewing_box .brewing_card .brewing_info p {
+    color: rgb(103, 58, 28);
+    font-size: 15px;
 }
 
 .brewing .brewing_box .brewing_card .brewing_info h3 {
@@ -1004,13 +1085,13 @@ section .main .main_image img {
 
 
 
-section nav .icon .cart-link {
+nav .icon .cart-link {
     position: relative;
     text-decoration: none;
 }
 
 
-section nav .icon .cart-link i {
+nav .icon .cart-link i {
     color: rgb(189, 127, 154);
 }
 
@@ -1046,86 +1127,6 @@ body {
 
 
 
-
-.offers-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: rgba(255, 242, 227, 0.986);
-    box-shadow: 0 2px 10px rgba(124, 79, 43, 0.3);
-    z-index: 1000;
-}
-
-
-.offers-nav .logo img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-}
-
-
-.offers-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
-.offers-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-
-.offers-nav ul li a {
-    text-decoration: none;
-    color: rgb(189, 127, 154);
-    font-size: 15px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-
-.offers-nav ul li a:hover,
-.offers-nav ul li a.active {
-    color: rgb(103, 58, 28);
-}
-
-
-.offers-nav ul li a::after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0%;
-    background: rgb(103, 58, 28);
-    transition: 0.3s;
-}
-
-
-.offers-nav ul li a:hover::after,
-.offers-nav ul li a.active::after {
-    width: 100%;
-}
-
-
-.offers-nav .icon {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-
-.nav-icon {
-    position: relative;
-    color: rgb(189, 127, 154);
-    font-size: 20px;
-    text-decoration: none;
-}
 
 
 .nav-icon:hover {
@@ -1372,19 +1373,14 @@ body {
 }
 
 
-
+.footer p{
+    color:rgb(189, 127, 154);
+    text-align: center;
+}
 
 
 
 @media (max-width: 1000px) {
-
-    .offers-nav ul li {
-        margin: 0 5px;
-    }
-
-    .offers-nav ul li a {
-        font-size: 13px;
-    }
 
     .offers-box {
         grid-template-columns: 1fr 1fr;
@@ -1394,15 +1390,6 @@ body {
 
 
 @media (max-width: 700px) {
-
-    .offers-nav {
-        height: auto;
-        padding: 10px;
-    }
-
-    .offers-nav ul {
-        display: none;
-    }
 
     .offers {
         padding-top: 130px;
@@ -1418,8 +1405,6 @@ body {
     }
 
 }
-
-
 
 
 
@@ -1440,7 +1425,6 @@ body {
     width: 100%;
     height: auto;
 }
-
 
 .subscription-box {
     display: grid;
@@ -1855,7 +1839,6 @@ body {
 }
 
 
-
 .empty-cart {
     text-align: center;
     color: #765f50;
@@ -1869,9 +1852,10 @@ body {
     margin-bottom: 20px;
 }
 
-.empty-cart i, h2{
+.empty-cart i, 
+.empty-cart h2{
     font-size: 40px;
-} 
+}
 
 
 @media (max-width: 700px) {
@@ -1946,29 +1930,29 @@ body {
 
 
 
-    section nav {
+    nav {
         height: 105px;
         padding: 5px 15px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    section nav .logo,
-    section nav .logo img {
+    nav .logo,
+    nav .logo img {
         width: 55px;
         height: 55px;
     }
 
-    section nav .icon {
+    nav .icon {
         display: flex;
         gap: 14px;
     }
 
-    section nav .icon i {
+    nav .icon i {
         font-size: 18px;
     }
 
-    section nav ul {
+    nav ul {
         order: 3;
         width: 100%;
         height: 38px;
@@ -1982,16 +1966,16 @@ body {
         scrollbar-width: none;
     }
 
-    section nav ul::-webkit-scrollbar {
+    nav ul::-webkit-scrollbar {
         display: none;
     }
 
-    section nav ul li {
+    nav ul li {
         flex: 0 0 auto;
         margin: 0;
     }
 
-    section nav ul li a {
+    nav ul li a {
         font-size: 13px;
     }
 
@@ -2238,17 +2222,3 @@ body {
 
 }
 
-
-.common-ninja-space {
-    width: 100%;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    clear: both;
-}
-
-.widgio-space {
-    width: 100%;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    clear: both;
-}
