@@ -9,20 +9,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-    <script src="https://widgets.widg.io/widgio-elements.js" defer></script>
 </head>
 <body>
 
     <section id="Home">
-        <nav>
+        <nav class="main-nav">
             <div class="logo">
                 <img src="images/coffee_cup-removebg-preview.png" alt="Logo">
             </div>
-            <ul><li><a href="#Home">Home</a></li>
-                <li><a href="#Menu">Drink Menu</a></li>
-                <li><a href="#Brewing">Brewing Machines</a></li>
-                <li><a href="#Events">Events & Workshops</a></li>
-                <li><a href="#Offers">Offers & Subscriptions</a></li>
+            <ul><li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Drink Menu</a></li>
+                <li><a href="brewing.html">Brewing Machines</a></li>
+                <li><a href="events.html">Events & Workshops</a></li>
+                <li><a href="offers and subscriptions.html">Offers & Subscriptions</a></li>
             </ul>
 
             <div class="icon">
@@ -34,15 +33,29 @@
             </div>
 
             <div class="search-form">
-                <input type="search"
-
-                       id="search-box"
-
-                       placeholder="Search our products here...">
+                <input type="search" id="search-box" placeholder="Search our products here...">
 
                 <label for="search-box"></label>
             </div>
         </nav>
+
+
+            <div id="discountModal" class="discount-modal">
+                <div class="discount-content">
+                    <button class="close-modal" onclick="closeModal()">&times;</button>
+
+                    <h2>Welcome to Bean Boutique!</h2>
+
+                    <p>Sign up to receive <strong>10% off</strong> on your first purchase.</p>
+
+                    <input type="email" id="popupEmail" placeholder="Enter your email" required>
+
+                    <button class="discount-button" onclick="submitEmail()">
+                        Get My Discount
+                    </button>
+                </div>
+            </div>
+
 
         <div class="main">
             <div class="men_text">
@@ -65,7 +78,6 @@
                 </p>
 
                 <div class="main_btn">
-
                     <a href="menu.html">
 
                         Explore Our Menu
@@ -92,12 +104,7 @@
         </div>
     </section>
 
-    <script src="https://elfsightcdn.com/platform.js" async></script>
 
-    <div class="elfsight-app-5483ba05-ea63-423e-82ad-06c69608952e"
-
-         data-elfsight-app-lazy>
-    </div>
 
     <div class="about" id="About">
         <div class="about_main">
@@ -109,7 +116,7 @@
             <div class="about_text">
                 <h1>
 
-                    About<span>Us</span>
+                    About <span>Us</span>
 
                 </h1>
 
@@ -121,7 +128,7 @@
 
                 <p>
 
-                    We believe that a great café is a place where you can
+                    We believe that a great coffee shop is a place where you can
 
                     take a break from your life, meet friends, create new
 
@@ -185,958 +192,12 @@
             </div>
         </div>
 
-        <a href="menu.html" class="about_btn">
-
-            Discover Our Menu
-
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </div>
-
-        <div class="menu" id="Menu">
-
-        <h1>Drink <span>Menu</span></h1>
-
-        <div class="menu_box">
-            <div class="menu_card">
-                <div class="menu_image">
-                    <img src="images/cappuccino.jpg" alt="cappuccino">
-                </div>
-
-                <div class="menu_info">
-
-                    <h2>Cappuccino</h2>          
-
-                    <h3>$6</h3>
-
-                    <div class="menu_icon">
-
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star-half"></i>
-                    </div>
-
-                <a href="#" class="menu_btn" onclick="addToCart('Cappuccino', 6, 'images/cappuccino.jpg');
-
-                return false;">
-
-                Add to cart
-
-            </a>
-                </div>
-            </div>
-
-        <div class="menu_card">
-            <div class="menu_image">
-                <img src="images/americano.jpg" alt="Americano">
-            </div>
-
-            <div class="menu_info">
-
-                <h2>Americano</h2>
-
-                <h3>$5</h3>
-
-                <div class="menu_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star-half"></i>
-                </div>
-
-                <a href="#" class="menu_btn" onclick="addToCart('Americano', 6, 'images/americano.jpg');
-
-                return false;">
-
-                Add to cart
-            </a>
-                </div>
-            </div>
-
-        <div class="menu_card">
-            <div class="menu_image">
-                <img src="images/matcha-latte.jpg" alt="Matcha Latte">
-            </div>
-
-            <div class="menu_info">
-
-                <h2>Matcha Latte</h2>
-
-                <h3>$6</h3>
-
-                <div class="menu_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <a href="#" class="menu_btn" onclick="addToCart('Matcha Latte', 6, 'images/matcha latte.jpg');
-
-                return false;">
-
-                Add to cart
-
-            </a>
-                </div>
-        </div>
-
-        <div class="menu_card">
-            <div class="menu_image">
-                <img src="images/latte.jpg" alt="Latte">
-            </div>
-
-            <div class="menu_info">
-
-                <h2>Latte</h2>
-
-                <h3>$6</h3>
-
-                <div class="menu_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star-half"></i>
-                </div>
-
-                <a href="#" class="menu_btn" onclick="addToCart('Latte', 6, 'images/latte.jpg');
-
-                return false;">
-
-                Add to cart
-
-            </a>
-                </div>
-        </div>
-
-        <div class="menu_card">
-            <div class="menu_image">
-                <img src="images/macchiato.jpg" alt="Macchiato">
-            </div>
-
-            <div class="menu_info">
-
-                <h2>Macchiato</h2>
-
-                <h3>$6</h3>
-
-                <div class="menu_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star-half"></i>
-                </div>
-
-                <a href="#" class="menu_btn" onclick="addToCart('Macchiato', 6, 'images/macchiato.jpg');
-                return false;">
-
-                Add to cart
-
-            </a>
-                </div>
-        </div>
-
-        <div class="menu_card">
-            <div class="menu_image">
-                <img src="images/mint-chocolate.jpg" alt="Mint Chocolate">
-            </div>
-
-            <div class="menu_info">
-
-                <h2>Mint Chocolate</h2>
-
-                <h3>$6</h3>
-
-                <div class="menu_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <a href="#" class="menu_btn" onclick="addToCart('Mint Chocolate', 6, 'images/mint chocolate.jpg');
-
-                return false;">
-
-                Add to cart
-
-            </a>
-                </div>
-        </div>
-
-        <div class="menu_card">
-            <div class="menu_image">
-                <img src="images/mocha.jpg" alt="Mocha">
-            </div>
-
-            <div class="menu_info">
-
-                <h2>Mocha</h2>
-
-                <h3>$6</h3>
-
-                <div class="menu_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star-half"></i>
-                </div>
-
-                <a href="#" class="menu_btn" onclick="addToCart('Mocha', 6, 'images/mocha.jpg');
-
-                return false;">
-
-                Add to cart
-
-            </a>
-                </div>
-        </div>
-
-        <div class="menu_card">
-            <div class="menu_image">
-                <img src="images/white-mocha.jpg" alt="White Mocha">
-            </div>
-
-            <div class="menu_info">
-
-                <h2>White Mocha</h2>
-
-                <h3>$6</h3>
-
-                <div class="menu_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star-half"></i>
-                </div>
-
-                <a href="#" class="menu_btn" onclick="addToCart('White Mocha', 6, 'images/white mocha.jpg'); return false;">
-
-                Add to cart
-
-            </a>
-                </div>
-        </div>
-    </div>
-    </div>
-
-        <div class="brewing" id="Brewing">
-
-    <h1>Brewing <span>Machines</span></h1>
-
-    <div class="brewing_box">
-        <div class="brewing_card">
-            <div class="brewing_image">
-                <img src="images/espresso-machine.jpg" alt="Espresso Machine">
-            </div>
-
-            <div class="brewing_info">
-
-                <h2>Espresso Machine</h2>
-
-                <h3>$299</h3>
-
-                <div class="brewing_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star-half"></i>
-                </div>
-
-         <a href="#" class="brewing_btn" onclick="addToCart('Espresso Machine', 299, 'images/espresso machine.jpg'); return false;">
-
-    Add to cart</a>
-                </div>
-            </div>
-
-        <div class="brewing_card">
-            <div class="brewing_image">
-                <img src="images/coffee-grinder.jpg" alt="Coffee Grinder">
-            </div>
-
-            <div class="brewing_info">
-
-                <h2>Coffee Grinder</h2>
-
-                <h3>$89</h3>
-
-                <div class="brewing_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <a href="#" class="brewing_btn" onclick="addToCart('Coffee Grinder', 89, 'images/coffee grinder.jpg'); return false;">
-
-                        Add to cart
-
-                    </a>
-                </div>
-            </div>
-
-        <div class="brewing_card">
-            <div class="brewing_image">
-                <img src="images/french-press.jpg" alt="French Press">
-            </div>
-
-            <div class="brewing_info">
-
-                <h2>French Press</h2>
-
-                <h3>$35</h3>
-
-                <div class="brewing_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star-half"></i>
-                </div>
-
-             <a href="#" class="brewing_btn" onclick="addToCart('French Press', 35, 'images/french press.jpg'); return false;">
-
-    Add to cart
-                    </a>
-                </div>
-            </div>
-
-        <div class="brewing_card">
-            <div class="brewing_image">
-                <img src="images/pour-over.jpg" alt="Pour Over Dripper">
-            </div>
-
-            <div class="brewing_info">
-
-                <h2>Pour-Over Dripper</h2>
-
-                <h3>$28</h3>
-
-                <div class="brewing_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <a href="#" class="brewing_btn" onclick="addToCart('Pour-Over Dripper', 28, 'images/pour over.jpg'); return false;">
-
-    Add to cart
-                    </a>
-                </div>
-            </div>
-
-        <div class="brewing_card">
-            <div class="brewing_image">
-                <img src="images/aeropress.jpg" alt="AeroPress">
-            </div>
-
-            <div class="brewing_info">
-
-                <h2>AeroPress</h2>
-
-                <h3>$40</h3>
-
-                <div class="brewing_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star-half"></i>
-                </div>
-
-                <a href="#" class="brewing_btn" onclick="addToCart('AeroPress', 40, 'images/aeropress.jpg'); return false;">
-
-    Add to cart
-                    </a>
-                </div>
-        </div>
-
-        <div class="brewing_card">
-            <div class="brewing_image">
-                <img src="images/moka-pot.jpg" alt="Moka Pot">
-            </div>
-
-            <div class="brewing_info">
-
-                <h2>Moka Pot</h2>
-
-                <h3>$45</h3>
-
-                <div class="brewing_icon">
-
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <a href="#" class="brewing_btn" onclick="addToCart('Moka Pot', 45, 'images/moka pot.jpg'); return false;">
-
-                Add to cart
-
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="events" id="Events">
-
-    <h1>Events & <span class="title-highlight">Workshops</span></h1>
-
-    <p class="events_intro">
-
-        Join our workshops and events for never-ending memories!
-
-    </p>
-
-    <div class="events_box">
-        <div class="event_card">
-            <div class="event_image">
-                <img src="images/coffee-brewing.jpg" alt="Coffee Brewing Workshop">
-            </div>
-
-            <div class="event_info">
-
-                <span class="event_date">SEPTEMBER 20, 2026</span>
-
-                <h2>Coffee Brewing Workshop</h2>
-
-                <p>
-
-                    Learn the basics of coffee brewing and discover how
-
-                    different brewing methods create different flavors.
-
-                </p>
-
-                <div class="event_details">
-                    <span>
-
-                        <i class="fa-regular fa-clock"></i>
-
-                        2:00 PM - 4:00 PM
-
-                    </span>
-                    <span>
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Bean Boutique
-
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="event_card">
-            <div class="event_image">
-                <img src="images/live-music-night.jpg" alt="Live Music Night">
-            </div>
-
-            <div class="event_info">
-
-                <span class="event_date">OCTOBER 5, 2026</span>
-
-                <h2>Live Music Night Event</h2>
-
-                <p>
-
-                    Enjoy your evening with your favorite coffee and live music!
-
-                </p>
-
-                <div class="event_details">
-
-                    <span>
-
-                        <i class="fa-regular fa-clock"></i>
-
-                        6:00 PM- 10:00 PM
-
-                    </span>
-
-                    <span>
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Bean Boutique
-
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="event_card">
-            <div class="event_image">
-                <img src="images/latte-art.jpg" alt="Latte Art Workshop">
-            </div>
-
-            <div class="event_info">
-
-                <span class="event_date">OCTOBER 18, 2026</span>
-
-                <h2>Latte Art Workshop</h2>
-
-                <p>
-
-                    Discover the techniques behind beautiful latte art
-
-                    and practice creating your own café-style designs.
-
-                </p>
-
-                <div class="event_details">
-
-                    <span>
-
-                        <i class="fa-regular fa-clock"></i>
-
-                        2:00 PM - 4:00 PM
-
-                    </span>
-                    <span>
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Bean Boutique
-
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="registration">
-        <div class="registration_text">
-
-            <span>JOIN US</span>
-
-            <h2>Register</h2>
-
-            <p>
-
-                Interested in joining one of our upcoming events/workshops?
-
-                Fill in your details below and send us your registration.
-
-            </p>
-        </div>
-
-        <form class="registration_form" action="mailto:beanboutiquecafe@gmail.com" method="post" enctype="text/plain">
-            <div class="form_row">
-                <div class="form_group">
-                    <label for="firstName">First Name</label>
-
-                    <input type="text" id="firstName" name="First Name" placeholder="Enter your first name" required>
-                </div>
-
-                <div class="form_group">
-                    <label for="lastName">Last Name</label>
-
-                    <input type="text" id="lastName" name="Last Name" placeholder="Enter your last name" required>
-                </div>
-            </div>
-
-            <div class="form_group">
-                <label for="email">Email Address</label>
-
-                <input type="email" id="email" name="Email Address" placeholder="Enter your email address" required>
-            </div>
-
-            <div class="form_group">
-
-                <label for="event">Choose an Event/Workshop</label>
-
-                <select id="event" name="Event" required>
-
-                    <option value="">Select an event/workshop</option>
-
-                    <option value="Coffee Brewing Workshop">
-
-                        Coffee Brewing Workshop
-
-                    </option>
-
-                    <option value="Coffee Tasting Evening">
-
-                        Coffee Tasting Evening
-
-                    </option>
-
-                    <option value="Latte Art Workshop">
-
-                        Latte Art Workshop
-
-                    </option>
-                </select>
-            </div>
-
-            <button type="submit" class="register_btn">
-
-                Register Now
-
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-        </form>
-    </div>
-</div>
-
-
-
-  <div class="offers" id="Offers">
-        <div class="offers-heading">
-
-            <span>DEALS & DISCOUNTS</span>
-
-            <h1>
-                Special Offers &
-                <span>Subscriptions</span>
-            </h1>
-
-            <p>
-                Enjoy exclusive deals, seasonal promotions, and special
-                rewards!
-            </p>
-        </div>
-
-
-        <div class="offers-box">
-            <div class="offer-card">
-                <div class="offer-image">
-                    <img src="images/coffee-grinder.jpg"
-                        alt="Coffee Grinder Promotion">
-
-                </div>
-
-
-                <div class="offer-content">
-                    <span class="offer-label">
-                        BREW AT HOME
-                    </span>
-
-                    <h2>
-                        20% Off Brewing Equipment
-                    </h2>
-
-                    <p>
-                        Selected brewing equipment at a discounted price.
-                    </p>
-
-                    <div class="offer-price">
-
-                        <span class="new-price">
-                            20% OFF
-                        </span>
-                    </div>
-
-                    <p class="offer-small">
-                        Available on selected brewing machines.
-                    </p>
-
-                    <a href="brewing.html" class="offer-btn">
-
-                        Shop Now
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-
-
-            <div class="offer-card">
-                <div class="offer-image">
-                    <img src="images/mocha.jpg"
-                        alt="Coffee Promotion">
-                </div>
-
-
-                <div class="offer-content">
-                    <span class="offer-label">
-                        WEEKDAY DEAL
-                    </span>
-
-                    <h2>
-                        Afternoon Coffee Deal
-                    </h2>
-
-                    <p>
-                        Treat yourself to a relaxing afternoon coffee with
-                        our special weekday promotion.
-                    </p>
-
-                    <div class="offer-price">
-                        <span class="new-price">
-                            $5
-                        </span>
-                    </div>
-
-                    <p class="offer-small">
-                        Selected drinks available Monday to Friday.
-                    </p>
-
-                    <a href="menu.html" class="offer-btn">
-
-                        View Menu
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <section class="promotion-banner">
-
-            <div>
-                <span>LIMITED TIME</span>
-
-                <h2>
-                    Something Special Is Brewing
-                </h2>
-
-                <p>
-                    Check back regularly for new offers and seasonal
-                    promotions at Bean Boutique Cafe.
-                </p>
-            </div>
-
-
-            <a href="menu.html">
-                Explore Our Menu
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </section>
-    </div>
-
-
-    <section class="subscriptions" id="Subscriptions">
-
-        <div class="subscription-box">
-            <div class="subscription-card">
-                <div class="subscription-icon">
-                    <i class="fa-solid fa-mug-hot"></i>
-                </div>
-
-                <span class="subscription-label">
-                    STARTER
-                </span>
-
-                <h2>
-                    Fav Cup
-                </h2>
-
-                <p class="subscription-description">
-                    A simple choice for coffee lovers.
-                </p>
-
-
-                <div class="subscription-price">
-
-                    <strong>
-                        $10
-                    </strong>
-
-                    <span>
-                        / month
-                    </span>
-                </div>
-
-
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        1 coffee selection per month
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Seasonal coffee choices
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        5% café discount
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Monthly coffee tips
-                    </li>
-                </ul>
-
-
-                <a href="mailto:beanboutiquecafe@gmail.com?subject=Cozy_Cup_Subscription" class="subscription-btn">
-
-                    Choose Cozy Cup
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-
-
-    
-
-            <div class="subscription-card popular">
-
-                <div class="popular-badge">
-                    MOST POPULAR
-                </div>
-
-                <div class="subscription-icon">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-
-                <span class="subscription-label">
-                    COFFEE OBSESSED
-                </span>
-
-                <h2>
-                    Daily Brew
-                </h2>
-
-                <p class="subscription-description">
-                    A little more coffee for those who never want to
-                    run out of their favourite cup.
-                </p>
-
-                <div class="subscription-price">
-                    <strong>
-                        $22
-                    </strong>
-
-                    <span>
-                        / month
-                    </span>
-                </div>
-
-
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        2 coffee selections per month
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Early access to new products
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        10% café discount
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Free workshop/event entry once a year
-                    </li>
-                </ul>
-
-
-                <a href="mailto:beanboutiquecafe@gmail.com?subject=Daily_Brew_Subscription" class="subscription-btn">
-
-                    Choose Daily Brew
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-
-
-            <div class="subscription-card">
-                <div class="subscription-icon">
-                    <i class="fa-solid fa-seedling"></i>
-                </div>
-
-                <span class="subscription-label">
-                    PREMIUM
-                </span>
-
-                <h2>
-                    The Beans Club
-                </h2>
-
-                <p class="subscription-description">
-                    For our coffee lovers.
-                </p>
-
-                <div class="subscription-price">
-
-                    <strong>
-                        $30
-                    </strong>
-
-                    <span>
-                        / month
-                    </span>
-                </div>
-
-
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        4 coffee selections per month
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Exclusive coffees
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        15% café discount
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Priority workshop registration
-                    </li>
-                </ul>
-
-
-                <a href="mailto:beanboutiquecafe@gmail.com?subject=Bean_Club_Subscription"
-                    class="subscription-btn">
-
-                    Be one of the Beans
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-
-
-       
-        <div class="subscription-note">
-            <i class="fa-solid fa-heart"></i>
 
         <footer> 
+            <div class="footer">
             <p>&copy; 2026 Bean Boutique Cafe. All Rights Reserved.</p> 
         </footer>
+        </div>
         </div>
     </section>
 
@@ -1257,21 +318,15 @@
 </script>
 
 
-
     <script src="cart.js"></script>
+    <script src="popup.js"></script>
+    
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-476e3006-a523-4231-b06f-deff39aa3f98" data-elfsight-app-lazy></div>
 
-    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
 
-<div class="common-ninja-space">
-
-    <div class="commonninja_component pid-75f0b04b-df1c-428a-8b1b-1ef9e7a8c6b2">
-
-    </div>
-</div>
-
-<div class="widgio-space">
-
-    <photo-gallery widgetid="21328" class="widgio-widget"></photo-gallery>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-03e43c90-5047-44c8-ac3a-9dbb18d50973" data-elfsight-app-lazy></div>
 
 </div>
 </body>
