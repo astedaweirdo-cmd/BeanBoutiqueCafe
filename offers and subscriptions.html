@@ -8,61 +8,46 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-
-    <script src="https://widgets.widg.io/widgio-elements.js" defer></script>
 </head>
 <body>
+    <nav class="main-nav">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/coffee_cup-removebg-preview.png" alt="Bean Boutique Cafe Logo">
+        </a>
+    </div>
 
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Drink Menu</a></li>
+        <li><a href="brewing.html">Brewing Machines</a></li>
+        <li><a href="events.html">Events & Workshops</a></li>
+        <li><a href="offers and subscriptions.html">Offers & Subscriptions</a></li>
+    </ul>
 
-    <nav class="offers-nav">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/coffee_cup-removebg-preview.png"
-                    alt="Bean Boutique Cafe Logo">
-            </a>
-        </div>
-        <ul>
-            <li><a href="index.html#Home">Home</a></li>
-            <li><a href="index.html#About">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="brewing.html">Brewing Machines</a></li>
-            <li><a href="events.html">Events & Workshops</a></li>
-            <li><a href="offers.html" class="active">Offers & Subscriptions</a></li>
-        </ul>
+    <div class="icon">
+        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        <a href="cart.html" class="cart-link">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
+    </div>
 
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search offers...">
+        <label for="search-box"></label>
+    </div>
 
-        <div class="icon">
-            <i class="fa-solid fa-magnifying-glass"
-                id="search-icon"></i>
-            <a href="cart.html" class="cart-link">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span id="cart-count">0</span>
-            </a>
-        </div>
-
-
-        <div class="search-form">
-            <input
-                type="search"
-                id="search-box"
-                placeholder="Search offers...">
-
-            <label for="search-box"></label>
-        </div>
-    </nav>
-
+</nav>
 
 
     <div class="offers" id="Offers">
         <div class="offers-heading">
-
             <span>DEALS & DISCOUNTS</span>
-
             <h1>
                 Special Offers &
                 <span>Subscriptions</span>
             </h1>
-
             <p>
                 Enjoy exclusive deals, seasonal promotions, and special
                 rewards!
@@ -71,41 +56,30 @@
 
 
         <div class="offers-box">
-
             <div class="offer-card">
                 <div class="offer-image">
                     <img src="images/coffee-grinder.jpg"
                         alt="Coffee Grinder Promotion">
-
                 </div>
-
-
                 <div class="offer-content">
                     <span class="offer-label">
                         BREW AT HOME
                     </span>
-
                     <h2>
                         20% Off Brewing Equipment
                     </h2>
-
                     <p>
                         Selected brewing equipment at a discounted price.
                     </p>
-
                     <div class="offer-price">
-
                         <span class="new-price">
                             20% OFF
                         </span>
                     </div>
-
                     <p class="offer-small">
                         Available on selected brewing machines.
                     </p>
-
                     <a href="brewing.html" class="offer-btn">
-
                         Shop Now
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -113,40 +87,31 @@
             </div>
 
 
-
             <div class="offer-card">
                 <div class="offer-image">
                     <img src="images/mocha.jpg"
                         alt="Coffee Promotion">
                 </div>
-
-
                 <div class="offer-content">
                     <span class="offer-label">
                         WEEKDAY DEAL
                     </span>
-
                     <h2>
                         Afternoon Coffee Deal
                     </h2>
-
                     <p>
                         Treat yourself to a relaxing afternoon coffee with
                         our special weekday promotion.
                     </p>
-
                     <div class="offer-price">
                         <span class="new-price">
                             $5
                         </span>
                     </div>
-
                     <p class="offer-small">
                         Selected drinks available Monday to Friday.
                     </p>
-
                     <a href="menu.html" class="offer-btn">
-
                         View Menu
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -155,21 +120,17 @@
         </div>
 
 
-
         <section class="promotion-banner">
             <div>
                 <span>LIMITED TIME</span>
-
                 <h2>
                     Something Special Is Brewing
                 </h2>
-
                 <p>
                     Check back regularly for new offers and seasonal
                     promotions at Bean Boutique Cafe.
                 </p>
             </div>
-
 
             <a href="menu.html">
                 Explore Our Menu
@@ -180,7 +141,6 @@
 
 
     <section class="subscriptions" id="Subscriptions">
-        
         <div class="subscription-box">
             <div class="subscription-card">
                 <div class="subscription-icon">
@@ -190,78 +150,60 @@
                 <span class="subscription-label">
                     STARTER
                 </span>
-
                 <h2>
                     Fav Cup
                 </h2>
-
                 <p class="subscription-description">
                     A simple choice for coffee lovers.
                 </p>
 
-
                 <div class="subscription-price">
-
                     <strong>
                         $10
                     </strong>
-
                     <span>
                         / month
                     </span>
                 </div>
-
 
                 <ul>
                     <li>
                         <i class="fa-solid fa-check"></i>
                         1 coffee selection per month
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         Seasonal coffee choices
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         5% café discount
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         Monthly coffee tips
                     </li>
                 </ul>
-
-
                 <a href="mailto:beanboutiquecafe@gmail.com?subject=Cozy_Cup_Subscription" class="subscription-btn">
-
-                    Choose Cozy Cup
+                    Choose Fav Cup
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-
 
 
             <div class="subscription-card popular">
                 <div class="popular-badge">
                     MOST POPULAR
                 </div>
-
                 <div class="subscription-icon">
                     <i class="fa-solid fa-heart"></i>
                 </div>
-
-
                 <span class="subscription-label">
                     COFFEE OBSESSED
                 </span>
-
                 <h2>
                     Daily Brew
                 </h2>
-
                 <p class="subscription-description">
                     A little more coffee for those who never want to
                     run out of their favourite cup.
@@ -271,97 +213,77 @@
                     <strong>
                         $22
                     </strong>
-
                     <span>
                         / month
                     </span>
                 </div>
-
 
                 <ul>
                     <li>
                         <i class="fa-solid fa-check"></i>
                         2 coffee selections per month
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         Early access to new products
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         10% café discount
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         Free workshop/event entry once a year
                     </li>
                 </ul>
-
                 <a href="mailto:beanboutiquecafe@gmail.com?subject=Daily_Brew_Subscription" class="subscription-btn">
-
                     Choose Daily Brew
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
 
 
-
             <div class="subscription-card">
                 <div class="subscription-icon">
                     <i class="fa-solid fa-seedling"></i>
                 </div>
-
                 <span class="subscription-label">
                     PREMIUM
                 </span>
-
                 <h2>
                     The Beans Club
                 </h2>
-
                 <p class="subscription-description">
                     For our coffee lovers.
                 </p>
-
                 <div class="subscription-price">
-
                     <strong>
                         $30
                     </strong>
-
                     <span>
                         / month
                     </span>
                 </div>
-
 
                 <ul>
                     <li>
                         <i class="fa-solid fa-check"></i>
                         4 coffee selections per month
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         Exclusive coffees
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         15% café discount
                     </li>
-
                     <li>
                         <i class="fa-solid fa-check"></i>
                         Priority workshop registration
                     </li>
                 </ul>
-
                 <a href="mailto:beanboutiquecafe@gmail.com?subject=Bean_Club_Subscription" class="subscription-btn">
-
                     Be one of the Beans
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -370,7 +292,9 @@
     </section>
 
       <footer> 
+        <div class="footer">
         <p>&copy; 2026 Bean Boutique Cafe. All Rights Reserved.</p> 
+        </div>
     </footer>
 
 
@@ -383,13 +307,11 @@
             document.querySelector(".search-form");
         const searchBox =
             document.getElementById("search-box");
-
         searchIcon.addEventListener("click", function () 
         {
             searchForm.classList.toggle("active");
             searchBox.focus();
         });
-
 
         searchBox.addEventListener("keydown", function (event) 
         {
@@ -403,7 +325,6 @@
                     document.querySelectorAll(".subscription-card");
                 let found = false;
 
-
                 offerCards.forEach(function (card) 
                 {
                     const text =
@@ -412,7 +333,6 @@
                     {
                         card.style.display = "";
                         found = true;
-
                     } else
                     {
                         card.style.display = "none";
@@ -435,12 +355,10 @@
                     }
                 });
 
-
                 if (!found)
                 {
                     alert("Offer or subscription not found.");
                     offerCards.forEach(function (card) 
-                    
                     {
                         card.style.display = "";
                     });
@@ -455,7 +373,6 @@
 
 
         searchBox.addEventListener("input", function () 
-        
         {
             if (searchBox.value.trim() === "") 
             {
@@ -463,13 +380,10 @@
                     document.querySelectorAll(".offer-card");
                 const subscriptionCards =
                     document.querySelectorAll(".subscription-card");
-
                 offerCards.forEach(function (card) 
-                
                 {
                     card.style.display = "";
                 });
-
 
                 subscriptionCards.forEach(function (card) 
                 {
