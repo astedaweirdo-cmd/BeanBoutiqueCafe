@@ -82,7 +82,7 @@ nav .icon i:hover {
     color: rgb(103, 58, 28);
 }
 
-
+ /* search bar */
 
 .search-form {
     position: absolute;
@@ -120,7 +120,7 @@ nav .icon i:hover {
     color: #765f50;
 }
 
-
+ /* discount modal */
 
 .discount-modal {
     display: none;
@@ -195,7 +195,6 @@ nav .icon i:hover {
 
 section {
     width: 100%;
-    height: 100vh;
     background: #fffaf5;
 }
 
@@ -353,7 +352,7 @@ section .main .main_image img {
 }
 
 
-
+ /* about us section */
 
 
 .about {
@@ -568,15 +567,26 @@ section .main .main_image img {
 }
 
 
+.footer {
+    background-color: rgba(255, 242, 227, 0.986);
+    color:  rgb(189, 127, 154);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
 
 .footer p {
-    color: rgb(189, 127, 154);
-    text-align: center;
+    margin: 0;
+    font-size: 14px;
 }
+
+ /* menu section */
+
 
 .menu {
     width: 100%;
-    min-height: 100vh;
+    height: auto;
+    min-height: auto;
     padding: 100px 0;
     background: #fffaf5;
 }
@@ -709,8 +719,7 @@ section .main .main_image img {
 }
 
 
-
-
+ /* brewing section */
 
 .brewing {
     width: 100%;
@@ -846,8 +855,7 @@ section .main .main_image img {
 }
 
 
-
-
+ /* events and workshops section */
 
 
 .events {
@@ -975,7 +983,7 @@ section .main .main_image img {
 
 
 
-
+ /* registration */
 
 
 .registration {
@@ -1083,7 +1091,7 @@ section .main .main_image img {
 }
 
 
-
+ /* cart link */
 
 nav .icon .cart-link {
     position: relative;
@@ -1150,7 +1158,7 @@ body {
 }
 
 
-
+ /* offers and subscriptions section */
 
 
 .offers {
@@ -1373,40 +1381,6 @@ body {
 }
 
 
-.footer p{
-    color:rgb(189, 127, 154);
-    text-align: center;
-}
-
-
-
-@media (max-width: 1000px) {
-
-    .offers-box {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-
-@media (max-width: 700px) {
-
-    .offers {
-        padding-top: 130px;
-    }
-
-    .offers-box {
-        grid-template-columns: 1fr;
-    }
-
-    .promotion-banner {
-        flex-direction: column;
-        text-align: center;
-    }
-
-}
-
-
 
 .subscriptions {
     position: relative;
@@ -1606,7 +1580,7 @@ body {
 }
 
 
-
+/* cart page */
 
 
 .cart-nav {
@@ -1858,6 +1832,36 @@ body {
 }
 
 
+
+ /* mobile */
+
+
+@media (max-width: 1000px) {
+
+    .offers-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .offers {
+        padding-top: 130px;
+    }
+
+    .offers-box {
+        grid-template-columns: 1fr;
+    }
+
+    .promotion-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
 @media (max-width: 700px) {
 
     .cart-item {
@@ -1880,6 +1884,16 @@ body {
 
 
 @media (max-width: 768px) {
+
+    /* move content below the two-row navigation */
+    .menu,
+    .brewing,
+    .events,
+    .offers,
+    .subscriptions,
+    .cart-page {
+        padding-top: 150px;
+    }
 
     .subscriptions {
         padding: 60px 5%;
@@ -1922,17 +1936,12 @@ body {
         text-align: left;
     }
 
-}
-
-
-
-@media (max-width: 768px) {
-
 
 
     nav {
-        height: 105px;
-        padding: 5px 15px;
+        height: auto;
+        min-height: 105px;
+        padding: 5px 15px 10px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -1955,15 +1964,15 @@ body {
     nav ul {
         order: 3;
         width: 100%;
-        height: 38px;
+        height: auto;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        gap: 20px;
-        padding: 0 5px;
-        overflow-x: auto;
-        white-space: nowrap;
-        scrollbar-width: none;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        padding: 5px 0;
+        overflow: visible;
+        white-space: normal;
     }
 
     nav ul::-webkit-scrollbar {
@@ -1976,7 +1985,8 @@ body {
     }
 
     nav ul li a {
-        font-size: 13px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
 
@@ -2151,6 +2161,18 @@ body {
         margin-right: auto;
     }
 
+     section#Home {
+        height: 100svh;
+        min-height: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    section#Home .home-content,
+    section#Home .home-text {
+        transform: translateY(-25px);
+    }
 
 
 
